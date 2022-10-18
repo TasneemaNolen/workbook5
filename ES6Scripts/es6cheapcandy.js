@@ -29,4 +29,4 @@ let findCandy = products.filter(
   (product) => product.product.indexOf("Swedish Fish") !== -1
 );
 //output
-console.log(findCandy);
+console.log(findCandy.length > 0);
