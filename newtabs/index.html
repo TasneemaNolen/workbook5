@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <button id="googleButton" onclick="openGoogle();">Google</button>
+    <button id="w3schoolsButton" onclick="openW3Schools()">W3Schools</button>
+    <button id="imagesButton">Images</button>
+    <script>
+      function openGoogle() {
+        window.open("https://www.google.com/");
+      }
+      function openW3Schools() {
+        window.open("https://www.w3schools.com/");
+      }
+      /* ("use strict");
+      window.onload = init;
+      function init() {
+        const googleButton = document.getElementById("googleButton");
+        googleButton.onclick = openImages;
+      }*/
+      window.onload = () => {
+        const imagesButton = document.getElementById("imagesButton");
+        imagesButton.onclick = () => window.open("images.html");
+      };
+    </script>
+  </body>
+</html>
